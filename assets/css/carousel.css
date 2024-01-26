@@ -7,7 +7,7 @@
 .carousel-item {
     background-position: center;
     background-size: cover;
-    padding: var(--pad-carousel) var(--pad4);
+    padding: calc(var(--pad-carousel) / 2.5) var(--pad4) var(--pad-carousel) var(--pad4);
 }
 
 .carousel-button {
@@ -16,7 +16,7 @@
     position: absolute;
     bottom: 0;
     transition: all .5s;
-    padding: 35px;
+    padding: var(--pad5);
 }
 
 .carousel-button:focus,

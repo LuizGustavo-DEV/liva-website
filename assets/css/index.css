@@ -6,6 +6,10 @@
     padding: var(--pad4);
 }
 
+.section {
+    padding: var(--pad4);
+}
+
 .menu {
-    background: var(--btn-trans-clr);
+    background: transparent;
 }

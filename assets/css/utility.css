@@ -13,6 +13,10 @@
     background: var(--emphasis-bg);
 }
 
+.sub2-bg {
+    background: var(--sub2-bg);
+}
+
 .trans-bg {
     background: transparent;
 }
@@ -24,6 +28,10 @@
 
 .sub-clr {
     color: var(--sub-clr);
+}
+
+.sub2-clr {
+    color: var(--sub2-clr);
 }
 
 .subtext-clr {
@@ -54,6 +62,10 @@
     font-size: var(--sub3-fs);
 }
 
+.subtitle-fs {
+    font-size: var(--subtitle-fs);
+}
+
 .title-fs {
     font-size: var(--title-fs);
 }
@@ -62,20 +74,116 @@
     font-size: var(--emphasis-fs);
 }
 
+.fw-2 {
+    font-weight: var(--fw2);
+}
+
+.fw-3 {
+    font-weight: var(--fw3);
+}
+
+.fw-4 {
+    font-weight: var(--fw4);
+}
+
+.fw-5 {
+    font-weight: var(--fw5);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.line-height-1 {
+    line-height: var(--line-height1);
+}
+
 /* BUTTONS */
 .button {
-    padding: var(--btn-size2) calc(var(--btn-size2) * 3);
-    text-transform: uppercase;
+    padding: var(--btn-size1) calc(var(--btn-size1) * 2);
     border: 2px solid;
+    transition: all .5s;
+    border-radius: 5px;
 }
 
 .small-button {
     padding: var(--btn-size1);
-    border: 1px solid transparent;
     border-radius: 5px;
 }
 
+.trans-button {
+    color: var(--sub-clr);
+    background: transparent;
+}
+
+.trans-button:hover,
+.trans-button:focus {
+    color: var(--main-clr);
+    background: var(--main-bg);
+    border-color: var(--main-bg);
+}
+
+.main-button {
+    color: var(--main-clr);
+    background: var(--main-bg);
+}
+
+.main-button:hover,
+.main-button:focus {
+    color: var(--sub-clr);
+    background: var(--sub-bg);
+    border-color: var(--sub-bg);
+}
+
+/* INPUTS */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pad4);
+    border-radius: 5px;
+    padding: var(--pad4) var(--pad4);
+}
+
+input,
+textarea {
+    border: none;
+    background: transparent;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+    font-family: Urbana;
+    width: 100%;
+    outline: none;
+    display: block;
+    border: none;
+}
+
+.input {
+    border: 2px solid;
+    border-radius: 5px;
+    color: var(--main-clr);
+    background: transparent;
+    padding: var(--pad3);
+    display: block;
+}
+
 /* SPACING */
+.d-block {
+    display: block;
+}
+
 .padt-1 {
     padding-top: var(--pad1);
 }
@@ -156,18 +264,26 @@
     padding-left: var(--pad5);
 }
 
+.padt-7 {
+    padding-top: var(--pad7);
+}
+
+.padb-7 {
+    padding-bottom: var(--pad7);
+}
+
+.padr-7 {
+    padding-right: var(--pad7);
+}
+
+.padl-7 {
+    padding-left: var(--pad7);
+}
+
 .margb-5 {
     margin-bottom: var(--pad5);
 }
 
-.fw-4 {
-    font-weight: var(--fw4);
-}
-
-.fw-5 {
-    font-weight: var(--fw5);
-}
-
-.text-uppercase {
-    text-transform: uppercase;
+.margb-7 {
+    margin-bottom: var(--pad7);
 }

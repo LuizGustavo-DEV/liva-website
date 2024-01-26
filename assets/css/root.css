@@ -1,12 +1,16 @@
+@import url('../font/font.css');
+
 :root {
     /* BACKGROUND */
     --main-bg: #FFF;
     --sub-bg: #000;
+    --sub2-bg: #03110D;
     --emphasis-bg: #DCF8B1;
 
     /* TYPOGRAPHY */
     --main-clr: #000;
     --sub-clr: #FFF;
+    --sub2-clr: #03110D;
     --subtext-clr: #393939;
     --emphasis-clr: #1AA584;
     --disabled-clr: #A0A0A0;
@@ -15,26 +19,27 @@
     --sub1-fs: 1rem;
     --sub2-fs: 0.875rem;
     --sub3-fs: 0.75rem;
-    --emphasis-fs: 3rem;
+    --emphasis-fs: 2rem;
+    --subtitle-fs: 1.75rem;
     --title-fs: 5rem;
 
-    --fw1: 400;
-    --fw2: 500;
-    --fw3: 600;
-    --fw4: 700;
-    --fw5: 800;
-    
-    /* BUTTONS */
-    --btn-main-clr: #000;
-    --btn-cta-clr: #1AA584;
-    --btn-trans-clr: transparent;
+    --fw1: 300;
+    --fw2: 400;
+    --fw3: 500;
+    --fw4: 600;
+    --fw5: 700;
 
-    --btn-size1: .25em;
-    --btn-size2: .5em;
+    --line-height1: 1.5rem;
+
+    /* BUTTONS */
+    --btn-main-bg: #000;
+    --btn-sub-bg: #FFF;
+    --btn-cta-bg: #1AA584;
+
+    --btn-size1: .75em;
 
     /* INPUTS */
-    --input-main-clr: transparent;
-    --input-size1: 1rem;
+    --input-size1: .75em;
 
     /* CAROUSEL */
     --btn-carousel-bg: #00000066;
@@ -48,11 +53,22 @@
     --pad3: .75rem;
     --pad4: 1rem;
     --pad5: 2rem;
-    --pad-carousel: 10rem;
+    --pad6: 3rem;
+    --pad7: 4rem;
+    --pad-carousel: 12.5rem;
 }
 
 body {
-    font-family: urbane, sans-serif;
+    font-family: Urbane, sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
+
+    line-height: 1.25;
+}
+
+@media screen and (min-width: 800) {
+    :root {
+        --emphasis-fs: 3rem;
+        --title-fs: 5rem;
+    }
 }
