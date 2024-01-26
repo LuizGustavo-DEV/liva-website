@@ -1,0 +1,11 @@
+@import url('root.css');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--pad4);
+}
+
+.menu {
+    background: var(--btn-trans-clr);
+}

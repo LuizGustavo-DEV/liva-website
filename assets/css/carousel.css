@@ -1,0 +1,52 @@
+@import url('root.css');
+
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+    padding: var(--pad-carousel) var(--pad4);
+}
+
+.carousel-button {
+    color: var(--btn-carousel-clr);
+    background-color: var(--btn-carousel-bg);
+    position: absolute;
+    bottom: 0;
+    transition: all .5s;
+    padding: 35px;
+}
+
+.carousel-button:focus,
+.carousel-button:hover {
+    color: var(--btn-carousel-clr-highlight);
+    background-color: var(--btn-carousel-bg-highlight);
+}
+
+.carousel-button.next {
+    right: calc(100% - var(--pad4));
+    transform: translateX(calc(200%));
+}
+
+.carousel-button.prev {
+    right: calc(100% - var(--pad4));
+    transform: translateX(calc(100%));
+}
+
+@media screen and (min-width: 50em) {
+    .carousel-button {
+        top: 50%;
+    }
+
+    .carousel-button.next {
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+    
+    .carousel-button.prev {
+        right: 100%;
+        transform: translate(100%, -50%);
+    }
+}

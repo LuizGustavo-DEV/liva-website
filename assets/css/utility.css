@@ -1,0 +1,173 @@
+@import url('root.css');
+
+/* BACKGROUND */
+.main-bg {
+    background: var(--main-bg);
+}
+
+.sub-bg {
+    background: var(--sub-bg);
+}
+
+.emphasis-bg {
+    background: var(--emphasis-bg);
+}
+
+.trans-bg {
+    background: transparent;
+}
+
+/* TYPOGRAPHY */
+.main-clr {
+    color: var(--main-clr);
+}
+
+.sub-clr {
+    color: var(--sub-clr);
+}
+
+.subtext-clr {
+    color: var(--subtext-clr);
+}
+
+.emphasis-clr {
+    color: var(--emphasis-clr);
+}
+
+.disabled-clr {
+    color: var(--disabled-clr);
+}
+
+.main-fs {
+    font-size: var(--main-fs);
+}
+
+.sub1-fs {
+    font-size: var(--sub1-fs);
+}
+
+.sub2-fs {
+    font-size: var(--sub2-fs);
+}
+
+.sub3-fs {
+    font-size: var(--sub3-fs);
+}
+
+.title-fs {
+    font-size: var(--title-fs);
+}
+
+.emphasis-fs {
+    font-size: var(--emphasis-fs);
+}
+
+/* BUTTONS */
+.button {
+    padding: var(--btn-size2) calc(var(--btn-size2) * 3);
+    text-transform: uppercase;
+    border: 2px solid;
+}
+
+.small-button {
+    padding: var(--btn-size1);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+/* SPACING */
+.padt-1 {
+    padding-top: var(--pad1);
+}
+
+.padb-1 {
+    padding-bottom: var(--pad1);
+}
+
+.padr-1 {
+    padding-right: var(--pad1);
+}
+
+.padl-1 {
+    padding-left: var(--pad1);
+}
+
+.padt-2 {
+    padding-top: var(--pad2);
+}
+
+.padb-2 {
+    padding-bottom: var(--pad2);
+}
+
+.padr-2 {
+    padding-right: var(--pad2);
+}
+
+.padl-2 {
+    padding-left: var(--pad2);
+}
+
+.padt-3 {
+    padding-top: var(--pad3);
+}
+
+.padb-3 {
+    padding-bottom: var(--pad3);
+}
+
+.padr-3 {
+    padding-right: var(--pad3);
+}
+
+.padl-3 {
+    padding-left: var(--pad3);
+}
+
+.padt-4 {
+    padding-top: var(--pad4);
+}
+
+.padb-4 {
+    padding-bottom: var(--pad4);
+}
+
+.padr-4 {
+    padding-right: var(--pad4);
+}
+
+.padl-4 {
+    padding-left: var(--pad4);
+}
+
+.padt-5 {
+    padding-top: var(--pad5);
+}
+
+.padb-5 {
+    padding-bottom: var(--pad5);
+}
+
+.padr-5 {
+    padding-right: var(--pad5);
+}
+
+.padl-5 {
+    padding-left: var(--pad5);
+}
+
+.margb-5 {
+    margin-bottom: var(--pad5);
+}
+
+.fw-4 {
+    font-weight: var(--fw4);
+}
+
+.fw-5 {
+    font-weight: var(--fw5);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

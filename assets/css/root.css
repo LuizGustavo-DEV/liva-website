@@ -1,0 +1,58 @@
+:root {
+    /* BACKGROUND */
+    --main-bg: #FFF;
+    --sub-bg: #000;
+    --emphasis-bg: #DCF8B1;
+
+    /* TYPOGRAPHY */
+    --main-clr: #000;
+    --sub-clr: #FFF;
+    --subtext-clr: #393939;
+    --emphasis-clr: #1AA584;
+    --disabled-clr: #A0A0A0;
+
+    --main-fs: 1.125rem;
+    --sub1-fs: 1rem;
+    --sub2-fs: 0.875rem;
+    --sub3-fs: 0.75rem;
+    --emphasis-fs: 3rem;
+    --title-fs: 5rem;
+
+    --fw1: 400;
+    --fw2: 500;
+    --fw3: 600;
+    --fw4: 700;
+    --fw5: 800;
+    
+    /* BUTTONS */
+    --btn-main-clr: #000;
+    --btn-cta-clr: #1AA584;
+    --btn-trans-clr: transparent;
+
+    --btn-size1: .25em;
+    --btn-size2: .5em;
+
+    /* INPUTS */
+    --input-main-clr: transparent;
+    --input-size1: 1rem;
+
+    /* CAROUSEL */
+    --btn-carousel-bg: #00000066;
+    --btn-carousel-bg-highlight: #000000EE;
+    --btn-carousel-clr: #FFFFFF66;
+    --btn-carousel-clr-highlight: #FFFFFFEE;
+
+    /* SPACING */
+    --pad1: .25rem;
+    --pad2: .5rem;
+    --pad3: .75rem;
+    --pad4: 1rem;
+    --pad5: 2rem;
+    --pad-carousel: 10rem;
+}
+
+body {
+    font-family: urbane, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
