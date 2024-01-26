@@ -7,9 +7,12 @@
         <link href="assets/css/root.css" rel="stylesheet">
         <link href="assets/css/index.css" rel="stylesheet">
         <link href="assets/css/utility.css" rel="stylesheet">
+        <link href="assets/css/card.css" rel="stylesheet">
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-long-right.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-long-left.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="assets/css/carousel.css">
         <title>Liva</title>
@@ -23,13 +26,16 @@
                 <span class="gg-menu" aria-hidden="true"></span>
             </button>
         </header>
+        <aside class="mobile-menu" aria-hidden="true">
+
+        </aside>
         <section class="carousel">
             <div class="carousel-list">
                 <div class="carousel-item" style="background-image: url('assets/img/banner-1.png')">
                     <div class="carousel-text">
                         <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
                         <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg small-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
@@ -37,7 +43,7 @@
                     <div class="carousel-text">
                         <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
                         <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg small-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
@@ -45,7 +51,7 @@
                     <div class="carousel-text">
                         <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
                         <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg small-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
@@ -69,7 +75,7 @@
         </section>
         <section class="section sub2-bg sub-clr padt-7 padb-7">
             <h2 class="subtitle-fs sub-clr padb-5 fw-4">
-                <span class="d-block">Fale agora</span> com um consultor de vendas
+                Fale agora com um consultor de vendas
             </h2>
             <p class="sub1-fs padb-5">
                 Tire suas dúvidas e conheça de perto o seu
@@ -93,14 +99,126 @@
                     <label for="message">Mensagem</label>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
+                <button class="button emphasis-button text-uppercase">Enviar Mensagem</button>
             </form>
         </section>
+        <section class="section main-bg padt-7 padb-7">
+            <h2 class="subtitle-fs sub2-clr main-clr padb-5 margb-5">
+                Confira todos os
+                <span class="emphasis-clr">empreendimentos da Liva</span>
+            </h2>
+            <ul class="cards padt-5 padb-5 margb-5">
+                <li class="card emphasis-card">
+                    <div class="card-text sub-clr fw-3">
+                        <p class="button main-button text-uppercase sub3-fs margb-3">Pré Lançamento</p>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <a href="">
+                        <img src="assets/img/banner-1.png" alt="">
+                    </a>
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <a href="">
+                        <img src="assets/img/banner-2.png" alt="">
+                    </a>
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <a href="">
+                        <img src="assets/img/banner-3.png" alt="">
+                    </a>
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <a href="">
+                        <img src="assets/img/banner-1.png" alt="">
+                    </a>
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <a href="">
+                        <img src="assets/img/banner-2.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center">
+                <button class="button disabled-button text-uppercase margt-5 margb-5">Carregar Mais</button>
+            </div>
+        </section>
+        <footer class="section footer sub-bg sub-clr padt-7 padb-5">
+            <div>
+                <h2 class="padb-3">
+                    <img src="assets/img/liva-footer.png" alt="Logotipo da Liva">
+                </h2>
+                <p class="sub3-fs">
+                    Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore 
+                    eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <nav>
+                <h3 class="text-uppercase emphasis-clr padb-4 fw-4">Navegue no site</h3>
+                <ul>
+                    <li class="text-uppercase padb-4">
+                        <a class="sub-clr" href="">Home</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="sub-clr" href="">Sobre a Liva</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="sub-clr" href="">Empreendimentos</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="sub-clr" href="">Notícias</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="sub-clr" href="">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <p class="padb-5">Acompanhe nossas redes sociais</p>
+                <a class="round-button xs-button main-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
+                    <span class="gg-facebook" aria-hidden="true"></span>
+                </a>
+                <a class="round-button xs-button main-button d-inline-block" href="https://instagram" aria-label="Instagram">
+                    <span class="gg-instagram" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div>
+                <p class="padb-4">
+                    Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore
+                </p>
+                <address>
+                    <span class="fw-4 padb-1">(11) 9909-9091</span><br>
+                    <a class="sub-clr" href="mailto:contato@silva.com.br">contato@silva.com.br</a><br>
+                    <a class="button emphasis-button text-uppercase d-inline-block margt-3" href="https://whatsapp">&#xF618; Whatsapp</a>
+                </address>
+            </div>
+            <div class="subtext-clr padt-2 footer-border d-flex justify-between align-center">
+                <small class="sub3-fs width-50">
+                    Liva © 2022 Todos os direitos reservados.
+                </small>
+                <img src="assets/img/feba-logo.png" alt="Logotipo da FEBA Capital">
+            </div>
+        </footer>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous">
-        </script>
+            crossorigin="anonymous"
+        ></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="assets/js/carousel.js" type="text/javascript"></script>
+        <script src="assets/js/form.js" type="text/javascript"></script>
     </body>
 </html>

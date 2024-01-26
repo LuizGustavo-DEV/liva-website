@@ -94,20 +94,28 @@
     text-transform: uppercase;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .line-height-1 {
     line-height: var(--line-height1);
 }
 
 /* BUTTONS */
 .button {
-    padding: var(--btn-size1) calc(var(--btn-size1) * 2);
+    padding: var(--btn-size2) calc(var(--btn-size2) * 2);
     border: 2px solid;
     transition: all .5s;
     border-radius: 5px;
 }
 
-.small-button {
+.xs-button {
     padding: var(--btn-size1);
+}
+
+.sm-button {
+    padding: var(--btn-size2);
     border-radius: 5px;
 }
 
@@ -135,7 +143,33 @@
     border-color: var(--sub-bg);
 }
 
+.emphasis-button {
+    color: var(--sub-clr);
+    background: var(--btn-emphasis-bg);
+    border-color: var(--btn-emphasis-bg);
+}
+
+.emphasis-button:hover,
+.emphasis-button:focus {
+    background: var(--btn-emphasis-hover-bg);
+}
+
+.disabled-button {
+    color: var(--disabled-clr);
+    background: var(--btn-sub-bg);
+}
+
+.round-button {
+    border: 1px solid transparent;
+    border-radius: 50rem;
+}
+
 /* INPUTS */
+form,
+form input {
+    transition: all .5s;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -146,10 +180,12 @@ form {
 
 input,
 textarea {
+    padding-top: var(--pad2);
     border: none;
     background: transparent;
 }
 
+input,
 textarea {
     display: block;
     width: 100%;
@@ -157,13 +193,18 @@ textarea {
 
 input {
     display: none;
+    max-height: 0;
+}
+
+input:focus,
+input:focus-visible {
+    height: auto;
 }
 
 input:focus,
 input:focus-visible,
 textarea:focus,
 textarea:focus-visible {
-    font-family: Urbana;
     width: 100%;
     outline: none;
     display: block;
@@ -182,6 +223,22 @@ textarea:focus-visible {
 /* SPACING */
 .d-block {
     display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .padt-1 {
@@ -280,10 +337,26 @@ textarea:focus-visible {
     padding-left: var(--pad7);
 }
 
+.margt-3 {
+    margin-top: var(--pad3);
+}
+
+.margb-3 {
+    margin-bottom: var(--pad3);
+}
+
+.margr-3 {
+    margin-right: var(--pad3);
+}
+
 .margb-5 {
     margin-bottom: var(--pad5);
 }
 
 .margb-7 {
     margin-bottom: var(--pad7);
+}
+
+.width-50 {
+    width: 50%;
 }

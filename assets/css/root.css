@@ -15,12 +15,12 @@
     --emphasis-clr: #1AA584;
     --disabled-clr: #A0A0A0;
 
-    --main-fs: 1.125rem;
-    --sub1-fs: 1rem;
-    --sub2-fs: 0.875rem;
-    --sub3-fs: 0.75rem;
-    --emphasis-fs: 2rem;
-    --subtitle-fs: 1.75rem;
+    --main-fs: 1.25rem;
+    --sub1-fs: 1.125rem;
+    --sub2-fs: 1rem;
+    --sub3-fs: 0.875rem;
+    --emphasis-fs: 2.25rem;
+    --subtitle-fs: 2rem;
     --title-fs: 5rem;
 
     --fw1: 300;
@@ -34,9 +34,11 @@
     /* BUTTONS */
     --btn-main-bg: #000;
     --btn-sub-bg: #FFF;
-    --btn-cta-bg: #1AA584;
+    --btn-emphasis-bg: #1AA584;
+    --btn-emphasis-hover-bg: #48B79D;
 
-    --btn-size1: .75em;
+    --btn-size1: .5em;
+    --btn-size2: .75em;
 
     /* INPUTS */
     --input-size1: .75em;
@@ -51,14 +53,19 @@
     --pad1: .25rem;
     --pad2: .5rem;
     --pad3: .75rem;
-    --pad4: 1rem;
+    --pad4: 1.5rem;
     --pad5: 2rem;
     --pad6: 3rem;
     --pad7: 4rem;
     --pad-carousel: 12.5rem;
+
+    /* BORDER */
+    --footer-border: #1C1C1C;
 }
 
-body {
+body,
+textarea,
+input {
     font-family: Urbane, sans-serif;
     font-style: normal;
     font-weight: 300;

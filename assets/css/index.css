@@ -13,3 +13,30 @@
 .menu {
     background: transparent;
 }
+
+.menu * {
+    transition: all .5s;
+}
+
+.mobile-menu {
+    position: fixed;
+    background: var(--main-bg);
+    transform: translateX(100%);
+    transition: all .5s;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.footer {
+    display: grid;
+    gap: var(--pad6);
+}
+
+.footer-border {
+    border-top: 2px solid var(--footer-border);
+}
