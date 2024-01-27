@@ -143,6 +143,17 @@
     border-color: var(--sub-bg);
 }
 
+.sub-button {
+    color: var(--sub-clr);
+    background: var(--sub-bg);
+}
+
+.sub-button:hover,
+.sub-button:focus {
+    color: var(--main-clr);
+    background: var(--main-bg);
+}
+
 .emphasis-button {
     color: var(--sub-clr);
     background: var(--btn-emphasis-bg);
@@ -162,6 +173,7 @@
 .round-button {
     border: 1px solid transparent;
     border-radius: 50rem;
+    transition: all .5s;
 }
 
 /* INPUTS */
@@ -191,7 +203,8 @@ textarea {
     width: 100%;
 }
 
-input {
+input,
+select {
     display: none;
     max-height: 0;
 }
@@ -211,13 +224,53 @@ textarea:focus-visible {
     border: none;
 }
 
-.input {
+.input,
+.select,
+.dropdown-list .item {
     border: 2px solid;
     border-radius: 5px;
     color: var(--main-clr);
     background: transparent;
     padding: var(--pad3);
     display: block;
+}
+
+.select {
+    position: relative;
+    width: 100%;
+}
+
+.select label[for] {
+    display: none;
+}
+
+.dropdown-list {
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transform: translateY(100%);
+    width: 100%;
+    background: var(--main-bg);
+    z-index: 1;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown-list .item {
+    width: 100%;
+    background-color: var(--select-bg);
+    border-color: transparent;
+    transition: all .5s;
+}
+
+.dropdown-list .item:not(:last-child) {
+    margin-bottom: .25em;
+}
+
+.dropdown-list .item:hover,
+.dropdown-list .item:focus {
+    background-color: var(--sub-bg);
+    color: var(--sub-clr);
 }
 
 /* SPACING */
@@ -239,6 +292,10 @@ textarea:focus-visible {
 
 .align-center {
     align-items: center;
+}
+
+.pad-0 {
+    padding: 0;
 }
 
 .padt-1 {
@@ -359,4 +416,8 @@ textarea:focus-visible {
 
 .width-50 {
     width: 50%;
+}
+
+.width-100 {
+    width: 100%;
 }

@@ -26,8 +26,33 @@
                 <span class="gg-menu" aria-hidden="true"></span>
             </button>
         </header>
-        <aside class="mobile-menu" aria-hidden="true">
-
+        <aside class="mobile-menu section" aria-hidden="true">
+            <nav class="padt-5 padb-5">
+                <ul>
+                    <li class="text-uppercase padb-4">
+                        <a class="main-clr" href="#">Home</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="main-clr" href="#">Sobre a Liva</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="main-clr" href="#">Empreendimentos</a>
+                    </li>
+                    <li class="text-uppercase padb-4">
+                        <a class="main-clr" href="#">Notícias</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="main-clr" href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="padb-5">Acompanhe nossas redes sociais</p>
+            <a class="round-button xs-button sub-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
+                <span class="gg-facebook" aria-hidden="true"></span>
+            </a>
+            <a class="round-button xs-button sub-button d-inline-block" href="https://instagram" aria-label="Instagram">
+                <span class="gg-instagram" aria-hidden="true"></span>
+            </a>
         </aside>
         <section class="carousel">
             <div class="carousel-list">
@@ -107,6 +132,52 @@
                 Confira todos os
                 <span class="emphasis-clr">empreendimentos da Liva</span>
             </h2>
+            <button class="button sub-button text-uppercase d-block width-100" aria-hidden="true">
+                Filtros
+            </button>
+            <form action="#" method="get" class="pad-0 padt-3">
+                <div class="select">
+                    <label for="stage">Estágio do empreendimento</label>
+                    <select name="stage" id="stage">
+                        <option value="A">Opção 1</option>
+                        <option value="B">Opção 2</option>
+                    </select>
+                    
+                    <label aria-hidden="true">Estágio do empreendimento</label>
+                    <span class="material-symbols-outlined"></span>
+                    <ul class="dropdown-list" aria-hidden="true">
+                        <li class="item" data-value="A">Opção 1</li>
+                        <li class="item" data-value="B">Opção 2</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <label for="stage">Localização</label>
+                    <select name="stage" id="stage">
+                        <option value="A">Opção 1</option>
+                        <option value="B">Opção 2</option>
+                    </select>
+                    
+                    <label aria-hidden="true">Localização</label>
+                    <ul class="dropdown-list" aria-hidden="true">
+                        <li class="item" data-value="A">Opção 1</li>
+                        <li class="item" data-value="B">Opção 2</li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <label for="stage">Tipo de imóvel</label>
+                    <select name="stage" id="stage">
+                        <option value="A">Opção 1</option>
+                        <option value="B">Opção 2</option>
+                    </select>
+                    
+                    <label aria-hidden="true">Tipo de imóvel</label>
+                    <span class="" aria-hidden="true"></span>
+                    <ul class="dropdown-list" aria-hidden="true">
+                        <li class="item" data-value="A">Opção 1</li>
+                        <li class="item" data-value="B">Opção 2</li>
+                    </ul>
+                </div>
+            </form>
             <ul class="cards padt-5 padb-5 margb-5">
                 <li class="card emphasis-card">
                     <div class="card-text sub-clr fw-3">
@@ -202,7 +273,7 @@
                 <address>
                     <span class="fw-4 padb-1">(11) 9909-9091</span><br>
                     <a class="sub-clr" href="mailto:contato@silva.com.br">contato@silva.com.br</a><br>
-                    <a class="button emphasis-button text-uppercase d-inline-block margt-3" href="https://whatsapp">&#xF618; Whatsapp</a>
+                    <a class="button emphasis-button text-uppercase d-inline-block margt-3" href="https://whatsapp">Whatsapp</a>
                 </address>
             </div>
             <div class="subtext-clr padt-2 footer-border d-flex justify-between align-center">
@@ -220,5 +291,6 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="assets/js/carousel.js" type="text/javascript"></script>
         <script src="assets/js/form.js" type="text/javascript"></script>
+        <script src="assets/js/menu.js" type="text/javascript"></script>
     </body>
 </html>
