@@ -286,12 +286,28 @@ textarea:focus-visible {
     display: flex;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .justify-between {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .align-center {
     align-items: center;
+}
+
+.gap-5 {
+    gap: var(--pad5);
+}
+
+.gap-7 {
+    gap: var(--pad7);
 }
 
 .pad-0 {
@@ -414,10 +430,26 @@ textarea:focus-visible {
     margin-bottom: var(--pad7);
 }
 
+.flex-1 * {
+    flex: 1;
+}
+
 .width-50 {
     width: 50%;
 }
 
 .width-100 {
     width: 100%;
+}
+
+@media screen and (max-width: 75em) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .mobile-only {
+        display: none;
+    }
 }

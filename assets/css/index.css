@@ -5,13 +5,16 @@
     width: 100%;
     position: fixed;
     display: flex;
+    gap: var(--pad6);
+    align-items: center;
     justify-content: space-between;
     padding: var(--pad4);
     z-index: 2;
 }
 
 .section {
-    padding: var(--pad4);
+    padding-left: var(--pad4);
+    padding-right: var(--pad4);
 }
 
 .menu {
@@ -45,4 +48,32 @@
 
 .footer-border {
     border-top: 2px solid var(--footer-border);
+}
+
+.form-container {
+    grid-template-areas:
+        "title"
+        "form"
+        "online"
+    ;
+}
+
+.form-container .title {
+    grid-area: title;
+}
+
+.form-container .form {
+    grid-area: form;
+}
+
+.form-container .online {
+    grid-area: online;
+}
+
+@media screen and (min-width: 37.5em) {
+    .section,
+    .header {
+        padding-left: var(--pad-sides-desktop);
+        padding-right: var(--pad-sides-desktop);
+    }
 }

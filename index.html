@@ -22,7 +22,35 @@
             <h1>
                 <img src="assets/img/liva-logo.png" alt="Logotipo da Liva">
             </h1>
-            <button class="menu" aria-label="Menu">
+            <nav class="mobile-hidden">
+                <ul class="d-flex align-center justify-center gap-5">
+                    <li class="text-uppercase">
+                        <a class="main-clr sub3-fs" href="#">Home</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="main-clr sub3-fs" href="#">Sobre a Liva</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="main-clr sub3-fs" href="#">Empreendimentos</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="main-clr sub3-fs" href="#">Notícias</a>
+                    </li>
+                    <li class="text-uppercase">
+                        <a class="main-clr sub3-fs" href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex align-center mobile-hidden">
+                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
+                    <span class="gg-facebook" aria-hidden="true"></span>
+                </a>
+                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://instagram" aria-label="Instagram">
+                    <span class="gg-instagram" aria-hidden="true"></span>
+                </a>
+                <a class="button sub3-fs utton emphasis-button text-uppercase d-inline-block" href="https://whatsapp">Whatsapp</a>
+            </div>
+            <button class="menu mobile-only" aria-label="Menu">
                 <span class="gg-menu" aria-hidden="true"></span>
             </button>
         </header>
@@ -58,25 +86,31 @@
             <div class="carousel-list">
                 <div class="carousel-item" style="background-image: url('assets/img/banner-1.png')">
                     <div class="carousel-text">
-                        <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
-                        <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <div>
+                            <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
+                            <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
+                            <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3 d-inline-block">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        </div>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('assets/img/banner-2.png')">
                     <div class="carousel-text">
-                        <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
-                        <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <div>
+                            <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
+                            <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
+                            <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3 d-inline-block">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        </div>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('assets/img/banner-3.png')">
                     <div class="carousel-text">
-                        <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
-                        <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
-                        <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        <div>
+                            <p class="sub-clr sub3-fs padb-4 text-uppercase fw-3">Pré Lançamento</p>
+                            <p class="sub-clr emphasis-fs padb-4 fw-5">Barra View</p>
+                            <p class="emphasis-bg sm-button margb-7 sub3-fs sub2-clr fw-3 d-inline-block">Apartamento com 3 dormitórios sendo 1 suíte</p>
+                        </div>
                         <a href="#" class="button trans-button text-uppercase sub2-fs fw-3">Saiba Mais</a>
                     </div>
                 </div>
@@ -88,44 +122,51 @@
                 <span class="gg-arrow-long-right" aria-hidden="true"></span>
             </button>
         </section>
-        <section class="section main-bg padt-7 padb-7">
-            <h2 class="subtitle-fs sub2-clr padb-5">Construímos confiança e <span class="emphasis-clr">realizamos sonhos!</span></h2>
-            <p class="padb-5 margb-5 sub2-fw subtext-clr line-height-1">
-                Na Liva, cada projeto é planejado para facilitar a vida dos moradores,
-                trazendo uma sensação de bem-estar. Espaços que abrigam histórias de vida
-                e que são desenvolvidas para que você viva momentos incríveis ao lado da
-                sua família.
-            </p>
-            <a href="#" class="button main-button text-uppercase">Saiba Mais</a>
+        <section class="d-flex flex-1 align-center justify-between gap-7 section main-bg padt-7 flex-1 padb-7">
+            <img src="assets/img/liva-logo-2.png" alt="">
+            <div>
+                <h2 class="subtitle-fs sub2-clr padb-5">Construímos confiança e <span class="emphasis-clr">realizamos sonhos!</span></h2>
+                <p class="padb-5 margb-5 sub2-fw subtext-clr line-height-1">
+                    Na Liva, cada projeto é planejado para facilitar a vida dos moradores,
+                    trazendo uma sensação de bem-estar. Espaços que abrigam histórias de vida
+                    e que são desenvolvidas para que você viva momentos incríveis ao lado da
+                    sua família.
+                </p>
+                <a href="#" class="button main-button text-uppercase">Saiba Mais</a>
+            </div>
         </section>
-        <section class="section sub2-bg sub-clr padt-7 padb-7">
-            <h2 class="subtitle-fs sub-clr padb-5 fw-4">
-                Fale agora com um consultor de vendas
-            </h2>
-            <p class="sub1-fs padb-5">
-                Tire suas dúvidas e conheça de perto o seu
-                <span class="fw-4">novo jeito de morar</span>
-            </p>
-            <form class="main-bg main-clr" action="#" method="post">
-                <p class="padt-4 padb-2 fw-3">Fale agora mesmo com a Liva</p>
-                <div class="input">
-                    <label for="name">Nome</label>
-                    <input id="name" name="name" type="text">
-                </div>
-                <div class="input">
-                    <label for="phone">Telefone</label>
-                    <input id="phone" name="phone" type="text">
-                </div>
-                <div class="input">
-                    <label for="email">E-mail</label>
-                    <input id="email" name="email" type="text">
-                </div>
-                <div class="input">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-                <button class="button emphasis-button text-uppercase">Enviar Mensagem</button>
-            </form>
+        <section class="d-grid flex-1 section sub2-bg sub-clr padt-7 padb-7">
+            <div>
+                <h2 class="subtitle-fs sub-clr padb-5 fw-4">
+                    Fale agora com um consultor de vendas
+                </h2>
+                <p class="sub1-fs padb-5">
+                    Tire suas dúvidas e conheça de perto o seu
+                    <span class="fw-4">novo jeito de morar</span>
+                </p>
+            </div>
+            <div>
+                <form class="main-bg main-clr" action="#" method="post">
+                    <p class="padt-4 padb-2 fw-3">Fale agora mesmo com a Liva</p>
+                    <div class="input">
+                        <label for="name">Nome</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="phone">Telefone</label>
+                        <input id="phone" name="phone" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="text">
+                    </div>
+                    <div class="input">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button class="button emphasis-button text-uppercase">Enviar Mensagem</button>
+                </form>
+            </div>
         </section>
         <section class="section main-bg padt-7 padb-7">
             <h2 class="subtitle-fs sub2-clr main-clr padb-5 margb-5">

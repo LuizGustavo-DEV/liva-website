@@ -60,6 +60,7 @@
     --pad6: 3rem;
     --pad7: 4rem;
     --pad-carousel: 12.5rem;
+    --pad-sides-desktop: 6rem;
 
     /* BORDER */
     --footer-border: #1C1C1C;
@@ -75,9 +76,10 @@ input {
     line-height: 1.25;
 }
 
-@media screen and (min-width: 800) {
+@media screen and (min-width: 50em) {
     :root {
         --emphasis-fs: 3rem;
         --title-fs: 5rem;
+        --pad-sides-desktop: 8rem;
     }
 }
