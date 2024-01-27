@@ -27,6 +27,7 @@
     transform: translateX(100%);
     transition: all .5s;
     height: 100vh;
+    height: 100dvh;
     width: 100%;
     padding-top: var(--pad7);
     z-index: 10;
