@@ -199,6 +199,7 @@
 
     .footer {
         grid-template-areas:
+            "logo nav . address"
             "logo nav social address"
             "copy copy copy copy"
         ;

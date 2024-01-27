@@ -14,6 +14,7 @@
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/carousel.css">
         <title>Liva</title>
     </head>
@@ -42,13 +43,16 @@
                 </ul>
             </nav>
             <div class="d-flex align-center lg-only">
-                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
+                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://facebook.com" aria-label="Facebook">
                     <span class="gg-facebook" aria-hidden="true"></span>
                 </a>
-                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://instagram" aria-label="Instagram">
+                <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://instagram.com" aria-label="Instagram">
                     <span class="gg-instagram" aria-hidden="true"></span>
                 </a>
-                <a class="button sub3-fs utton emphasis-button text-uppercase d-inline-block" href="https://whatsapp">Whatsapp</a>
+                <a class="button sub3-fs utton emphasis-button text-uppercase d-inline-block" href="https://whatsapp.com">
+                    <span class="fa fa-whatsapp"></span>
+                    Whatsapp
+                </a>
             </div>
             <button class="menu sm-only" aria-label="Menu">
                 <span class="material-symbols-outlined" aria-hidden="true">
@@ -84,7 +88,10 @@
                 <span class="gg-instagram" aria-hidden="true"></span>
             </a>
             <footer class="mobile-menu-footer width-100 sub3-bg section text-center">
-                <a class="text-uppercase button emphasis-button d-block" href="https://whatsapp.com">Whatsapp</a>
+                <a class="text-uppercase button emphasis-button d-block" href="https://whatsapp.com">
+                    <span class="fa fa-whatsapp"></span>
+                    Whatsapp
+                </a>
             </footer>
         </aside>
         <section class="carousel">
@@ -153,25 +160,33 @@
                 </p>
             </div>
             <div class="form">
-                <form class="main-bg main-clr" action="#" method="post">
+                <form id="message-form" class="main-bg main-clr" action="#" method="post">
                     <p class="padt-4 padb-2 fw-3">Fale agora mesmo com a Liva</p>
-                    <div class="input">
-                        <label for="name">Nome</label>
-                        <input id="name" name="name" type="text">
+                    <div>
+                        <div class="input">
+                            <label for="name">Nome</label>
+                            <input id="name" name="name" type="text">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="phone">Telefone</label>
-                        <input id="phone" name="phone" type="text">
+                    <div>
+                        <div class="input">
+                            <label for="phone">Telefone</label>
+                            <input id="phone" name="phone" type="tel">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="email">E-mail</label>
-                        <input id="email" name="email" type="text">
+                    <div>
+                        <div class="input">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5"></textarea>
+                    <div>
+                        <div class="input">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
                     </div>
-                    <button class="button emphasis-button text-uppercase">Enviar Mensagem</button>
+                    <button class="send-button button emphasis-button text-uppercase">Enviar Mensagem</button>
                 </form>
             </div>
             <div class="online">
@@ -436,34 +451,34 @@
                 <h2 class="padb-3">
                     <img src="assets/img/liva-footer.png" alt="Logotipo da Liva">
                 </h2>
-                <p class="sub3-fs">
+                <p class="sub2-fs">
                     Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore 
                     eu fugiat nulla pariatur.
                 </p>
             </div>
             <nav class="nav">
-                <h3 class="text-uppercase emphasis-clr padb-4 fw-4">Navegue no site</h3>
+                <h3 class="text-uppercase emphasis-clr padb-4 fw-4 sub2-fs">Navegue no site</h3>
                 <ul>
-                    <li class="text-uppercase padb-4">
-                        <a class="sub-clr" href="">Home</a>
+                    <li class="text-uppercase padb-3">
+                        <a class="sub-clr sub2-fs" href="">Home</a>
                     </li>
-                    <li class="text-uppercase padb-4">
-                        <a class="sub-clr" href="">Sobre a Liva</a>
+                    <li class="text-uppercase padb-3">
+                        <a class="sub-clr sub2-fs" href="">Sobre a Liva</a>
                     </li>
-                    <li class="text-uppercase padb-4">
-                        <a class="sub-clr" href="">Empreendimentos</a>
+                    <li class="text-uppercase padb-3">
+                        <a class="sub-clr sub2-fs" href="">Empreendimentos</a>
                     </li>
-                    <li class="text-uppercase padb-4">
-                        <a class="sub-clr" href="">Notícias</a>
+                    <li class="text-uppercase padb-3">
+                        <a class="sub-clr sub2-fs" href="">Notícias</a>
                     </li>
                     <li class="text-uppercase">
-                        <a class="sub-clr" href="">Contato</a>
+                        <a class="sub-clr sub2-fs" href="">Contato</a>
                     </li>
                 </ul>
             </nav>
             <div class="social">
-                <p class="padb-5">Acompanhe nossas redes sociais</p>
+                <p class="padb-5 sub2-fs">Acompanhe nossas redes sociais</p>
                 <a class="round-button xs-button main-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
                     <span class="gg-facebook" aria-hidden="true"></span>
                 </a>
@@ -472,14 +487,17 @@
                 </a>
             </div>
             <div class="address">
-                <p class="padb-4">
+                <p class="padb-4 sub2-fs">
                     Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore
                 </p>
                 <address>
-                    <span class="fw-4 padb-1">(11) 9909-9091</span><br>
-                    <a class="sub-clr" href="mailto:contato@silva.com.br">contato@silva.com.br</a><br>
-                    <a class="button emphasis-button text-uppercase d-inline-block margt-3" href="https://whatsapp">Whatsapp</a>
+                    <span class="fw-4 padb-1 sub2-fs">(11) 9909-9091</span><br>
+                    <a class="sub-clr sub2-fs" href="mailto:contato@silva.com.br">contato@silva.com.br</a><br>
+                    <a class="button emphasis-button text-uppercase sub3-fs d-inline-block margt-3" href="https://whatsapp">
+                        <span class="fa fa-whatsapp"></span>
+                        Whatsapp
+                    </a>
                 </address>
             </div>
             <div class="copy subtext-clr padt-2 footer-border d-flex justify-between align-center">
@@ -489,12 +507,22 @@
                 <img src="assets/img/feba-logo.png" alt="Logotipo da FEBA Capital">
             </div>
         </footer>
+        <dialog class="modal padt-4 padb-4 padr-4 padl-4 sub3-bg text-center" aria-hidden="true">
+            <div class="image-container padb-4">
+                <img src="assets/img/check.png" alt="Sucesso!">
+            </div>
+            <div>
+                <p class="padb-3 emphasis-clr sub1-fs fw-4">Mensagem enviada com sucesso!</p>
+                <p class="sub2-fs subtext-clr fw-3">Aguarde em instantes que entraremos em contato.</p>
+            </div>
+        </dialog>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"
         ></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/jquery.mask.js" type="text/javascript"></script>
         <script src="assets/js/carousel.js" type="text/javascript"></script>
         <script src="assets/js/menu.js" type="text/javascript"></script>
         <script src="assets/js/form.js" type="text/javascript"></script>

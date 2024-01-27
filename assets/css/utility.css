@@ -197,6 +197,10 @@
     transition: all .5s;
 }
 
+.sending {
+    background-color: var(--btn-emphasis-hover-bg);
+}
+
 /* INPUTS */
 form,
 form input {
@@ -235,6 +239,32 @@ select {
 input:focus,
 input:focus-visible {
     height: auto;
+}
+
+.input,
+.input * {
+    transition: all .5s;
+}
+
+.error {
+    font-size: var(--sub3-fs);
+    color: var(--input-fail-clr);
+}
+
+.input.fail {
+    border-color: var(--input-fail-clr);
+}
+
+.input.fail input {
+    color: var(--input-fail-clr);
+}
+
+.input.success {
+    border-color: var(--input-success-clr);
+}
+
+.input.success input {
+    color: var(--input-success-clr);
 }
 
 input:focus,
@@ -489,5 +519,37 @@ textarea:focus-visible {
 @media screen and (min-width: 75em) {
     .sm-only {
         display: none;
+    }
+}
+
+/* MODAL */
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.modal[open] {
+    opacity: 1;
+    z-index: 5;
+}
+
+@media screen and (min-width: 62.5em) {
+    .modal {
+        max-width: 350px;
     }
 }

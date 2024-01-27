@@ -31,6 +31,10 @@
     transition: all 1s ease-in-out;
 }
 
+.emphasis-card .button {
+    border-color: transparent;
+}
+
 @media screen and (min-width: 62.5em) {
     .cards {
         grid-template-columns: 1fr 1fr;

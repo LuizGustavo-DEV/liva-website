@@ -45,6 +45,8 @@
     --select-bg: #F2F2F2;
     --select-hover-bg: #000;
     --input-size1: .75em;
+    --input-success-clr: #48B79D;
+    --input-fail-clr: #EB5757;
 
     /* CAROUSEL */
     --btn-carousel-bg: #00000066;
