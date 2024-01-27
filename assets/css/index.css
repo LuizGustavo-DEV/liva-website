@@ -21,11 +21,6 @@
     background: transparent;
 }
 
-.close-menu::after {
-    content: "\00D7";
-    font-size: var(--main-fs);
-}
-
 .mobile-menu {
     position: fixed;
     background: var(--main-bg);
@@ -41,6 +36,14 @@
     transform: translateX(0);
 }
 
+.mobile-menu-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: var(--pad4);
+    padding-top: var(--pad4);
+}
+
 .footer {
     display: grid;
     gap: var(--pad6);
@@ -50,7 +53,7 @@
     border-top: 2px solid var(--footer-border);
 }
 
-.form-container {
+.form-section {
     grid-template-areas:
         "title"
         "form"
@@ -58,16 +61,93 @@
     ;
 }
 
-.form-container .title {
+.form-section .title {
     grid-area: title;
 }
 
-.form-container .form {
+.form-section .form {
     grid-area: form;
 }
 
-.form-container .online {
+.form-section .online {
+    text-align: center;
     grid-area: online;
+}
+
+.cards-section {
+    grid-template-areas:
+        "title"
+        "filter"
+        "form"
+        "cards"
+        "button"
+    ;
+}
+
+.cards-section .title {
+    grid-area: title;
+}
+
+.cards-section .filter {
+    grid-area: filter;
+}
+
+.cards-section .form {
+    grid-area: form;
+}
+
+.cards-section .cards {
+    grid-area: cards
+}
+
+.cards-section .load-button {
+    grid-area: button;
+}
+
+.form-filter {
+    display: grid;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 2s ease-in-out;
+}
+
+.cards-section .filter .button {
+    width: 100%;
+    padding: var(--btn-size2) calc(var(--btn-size2) * 4);
+}
+
+.form-section .online img{
+    max-width: 150px;
+}
+
+.footer {
+    grid-template-areas: 
+        "logo"
+        "nav"
+        "social"
+        "address"
+        "copy"
+    ;
+}
+
+.footer .logo {
+    grid-area: logo;
+}
+
+.footer .nav {
+    grid-area: nav;
+}
+
+.footer .social {
+    grid-area: social;
+}
+
+.footer .address {
+    grid-area: address;
+}
+
+.footer .copy {
+    grid-area: copy;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -75,5 +155,58 @@
     .header {
         padding-left: var(--pad-sides-desktop);
         padding-right: var(--pad-sides-desktop);
+    }
+}
+
+@media screen and (min-width: 62.5em) {
+    .form-section {
+        grid-template-areas: 
+            "title form"
+            "online form"
+        ;
+
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(2, 1fr);
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../img/form-bg.png');
+    }
+
+    .form-section .online {
+        text-align: left;
+    }
+
+    .cards-section {
+        grid-template-areas:
+            "title filter"
+            "form form"
+            "cards cards"
+            "button button"
+        ;
+
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cards-section .filter {
+        text-align: right;
+    }
+
+    .cards-section .filter .button {
+        width: auto;
+    }
+
+    .footer {
+        grid-template-areas:
+            "logo nav social address"
+            "copy copy copy copy"
+        ;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .form-filter {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

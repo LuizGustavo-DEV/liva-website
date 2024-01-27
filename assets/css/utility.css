@@ -1,20 +1,30 @@
 @import url('root.css');
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* BACKGROUND */
 .main-bg {
-    background: var(--main-bg);
+    background-color: var(--main-bg);
 }
 
 .sub-bg {
-    background: var(--sub-bg);
+    background-color: var(--sub-bg);
 }
 
 .emphasis-bg {
-    background: var(--emphasis-bg);
+    background-color: var(--emphasis-bg);
 }
 
 .sub2-bg {
-    background: var(--sub2-bg);
+    background-color: var(--sub2-bg);
+}
+
+.sub3-bg {
+    background-color: var(--sub3-bg);
 }
 
 .trans-bg {
@@ -170,6 +180,17 @@
     background: var(--btn-sub-bg);
 }
 
+.button-filter {
+    background-color: var(--sub-bg);
+    color: var(--sub-clr);
+    transition: all .5s;
+}
+
+.button-filter.active {
+    background-color: var(--main-bg);
+    color: var(--main-clr);
+}
+
 .round-button {
     border: 1px solid transparent;
     border-radius: 50rem;
@@ -192,7 +213,7 @@ form {
 
 input,
 textarea {
-    padding-top: var(--pad2);
+    padding-top: var(--pad1);
     border: none;
     background: transparent;
 }
@@ -203,10 +224,12 @@ textarea {
     width: 100%;
 }
 
-input,
+input {
+    max-height: 0;
+}
+
 select {
     display: none;
-    max-height: 0;
 }
 
 input:focus,
@@ -237,6 +260,9 @@ textarea:focus-visible {
 
 .select {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--fw3);
     width: 100%;
 }
 
@@ -253,7 +279,9 @@ textarea:focus-visible {
     background: var(--main-bg);
     z-index: 1;
     border-radius: 5px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
 }
 
 .dropdown-list .item {
@@ -300,6 +328,10 @@ textarea:focus-visible {
 
 .align-center {
     align-items: center;
+}
+
+.gap-3 {
+    gap: var(--pad3);
 }
 
 .gap-5 {
@@ -443,13 +475,19 @@ textarea:focus-visible {
 }
 
 @media screen and (max-width: 75em) {
-    .mobile-hidden {
+    .lg-only {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 62.5em) {
+    .md-lg-only {
         display: none;
     }
 }
 
 @media screen and (min-width: 75em) {
-    .mobile-only {
+    .sm-only {
         display: none;
     }
 }

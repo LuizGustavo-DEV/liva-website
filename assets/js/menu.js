@@ -1,16 +1,12 @@
 $(document).ready(() => {
-    let active = false;
-
     $('.menu').on('click', function () {
-        if (active) {
-            active = false;
+        const mobileMenu = $('.mobile-menu');
 
-            $('.menu').find('span').removeClass('close-menu').addClass('gg-menu');
+        if (mobileMenu.hasClass('active')) {
+            $('.menu').find('.material-symbols-outlined').text('menu');
             $('.mobile-menu').removeClass('active');
         } else {
-            active = true;
-
-            $('.menu').find('span').removeClass('gg-menu').addClass('close-menu');
+            $('.menu').find('.material-symbols-outlined').text('close');
             $('.mobile-menu').addClass('active');
         }
     });

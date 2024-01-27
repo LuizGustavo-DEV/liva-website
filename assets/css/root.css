@@ -5,6 +5,7 @@
     --main-bg: #FFF;
     --sub-bg: #000;
     --sub2-bg: #03110D;
+    --sub3-bg: #F2F2F2;
     --emphasis-bg: #DCF8B1;
 
     /* TYPOGRAPHY */
@@ -15,11 +16,11 @@
     --emphasis-clr: #1AA584;
     --disabled-clr: #A0A0A0;
 
-    --main-fs: 1.25rem;
-    --sub1-fs: 1.125rem;
-    --sub2-fs: 1rem;
-    --sub3-fs: 0.875rem;
-    --emphasis-fs: 2.25rem;
+    --main-fs: 1.125rem;
+    --sub1-fs: 1rem;
+    --sub2-fs: .875rem;
+    --sub3-fs: .75rem;
+    --emphasis-fs: 2rem;
     --subtitle-fs: 2rem;
     --title-fs: 5rem;
 

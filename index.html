@@ -8,11 +8,11 @@
         <link href="assets/css/index.css" rel="stylesheet">
         <link href="assets/css/utility.css" rel="stylesheet">
         <link href="assets/css/card.css" rel="stylesheet">
-        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-long-right.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-long-left.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="assets/css/carousel.css">
         <title>Liva</title>
@@ -22,7 +22,7 @@
             <h1>
                 <img src="assets/img/liva-logo.png" alt="Logotipo da Liva">
             </h1>
-            <nav class="mobile-hidden">
+            <nav class="lg-only">
                 <ul class="d-flex align-center justify-center gap-5">
                     <li class="text-uppercase">
                         <a class="main-clr sub3-fs" href="#">Home</a>
@@ -41,7 +41,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="d-flex align-center mobile-hidden">
+            <div class="d-flex align-center lg-only">
                 <a class="round-button sub3-fs xs-button sub-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
                     <span class="gg-facebook" aria-hidden="true"></span>
                 </a>
@@ -50,8 +50,10 @@
                 </a>
                 <a class="button sub3-fs utton emphasis-button text-uppercase d-inline-block" href="https://whatsapp">Whatsapp</a>
             </div>
-            <button class="menu mobile-only" aria-label="Menu">
-                <span class="gg-menu" aria-hidden="true"></span>
+            <button class="menu sm-only" aria-label="Menu">
+                <span class="material-symbols-outlined" aria-hidden="true">
+                    menu
+                </span>
             </button>
         </header>
         <aside class="mobile-menu section" aria-hidden="true">
@@ -81,6 +83,9 @@
             <a class="round-button xs-button sub-button d-inline-block" href="https://instagram" aria-label="Instagram">
                 <span class="gg-instagram" aria-hidden="true"></span>
             </a>
+            <footer class="mobile-menu-footer width-100 sub3-bg section text-center">
+                <a class="text-uppercase button emphasis-button d-block" href="https://whatsapp.com">Whatsapp</a>
+            </footer>
         </aside>
         <section class="carousel">
             <div class="carousel-list">
@@ -123,7 +128,9 @@
             </button>
         </section>
         <section class="d-flex flex-1 align-center justify-between gap-7 section main-bg padt-7 flex-1 padb-7">
-            <img src="assets/img/liva-logo-2.png" alt="">
+            <div class="image-container md-lg-only" aria-hidden="true">
+                <img src="assets/img/liva-logo-2.png">
+            </div>
             <div>
                 <h2 class="subtitle-fs sub2-clr padb-5">Construímos confiança e <span class="emphasis-clr">realizamos sonhos!</span></h2>
                 <p class="padb-5 margb-5 sub2-fw subtext-clr line-height-1">
@@ -135,17 +142,17 @@
                 <a href="#" class="button main-button text-uppercase">Saiba Mais</a>
             </div>
         </section>
-        <section class="d-grid flex-1 section sub2-bg sub-clr padt-7 padb-7">
-            <div>
+        <section class="form-section d-grid flex-1 section sub2-bg gap-7 sub-clr padt-7 padb-7">
+            <div class="title">
                 <h2 class="subtitle-fs sub-clr padb-5 fw-4">
                     Fale agora com um consultor de vendas
                 </h2>
-                <p class="sub1-fs padb-5">
+                <p class="sub1-fs">
                     Tire suas dúvidas e conheça de perto o seu
                     <span class="fw-4">novo jeito de morar</span>
                 </p>
             </div>
-            <div>
+            <div class="form">
                 <form class="main-bg main-clr" action="#" method="post">
                     <p class="padt-4 padb-2 fw-3">Fale agora mesmo com a Liva</p>
                     <div class="input">
@@ -167,16 +174,27 @@
                     <button class="button emphasis-button text-uppercase">Enviar Mensagem</button>
                 </form>
             </div>
+            <div class="online">
+                <p class="sub3-fs padb-3">Colaboradores online:</p>
+                <div class="image-container">
+                    <img src="assets/img/avatar.png" alt="Todos os colaboradores online">
+                </div>
+            </div>
         </section>
-        <section class="section main-bg padt-7 padb-7">
-            <h2 class="subtitle-fs sub2-clr main-clr padb-5 margb-5">
+        <section class="cards-section d-grid gap-7 section main-bg padt-7 padb-7">
+            <h2 class="title subtitle-fs sub2-clr main-clr">
                 Confira todos os
                 <span class="emphasis-clr">empreendimentos da Liva</span>
             </h2>
-            <button class="button sub-button text-uppercase d-block width-100" aria-hidden="true">
-                Filtros
-            </button>
-            <form action="#" method="get" class="pad-0 padt-3">
+            <div class="filter" aria-hidden="true">
+                <button class="d-flex align-center justify-center button button-filter text-uppercase" aria-hidden="true">
+                    <span class="material-symbols-outlined padr-2">
+                        tune
+                    </span>
+                    Filtros
+                </button>
+            </div>
+            <form class="form form-filter pad-0" action="#" method="get" class="form pad-0 padt-3">
                 <div class="select">
                     <label for="stage">Estágio do empreendimento</label>
                     <select name="stage" id="stage">
@@ -185,7 +203,9 @@
                     </select>
                     
                     <label aria-hidden="true">Estágio do empreendimento</label>
-                    <span class="material-symbols-outlined"></span>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
                     <ul class="dropdown-list" aria-hidden="true">
                         <li class="item" data-value="A">Opção 1</li>
                         <li class="item" data-value="B">Opção 2</li>
@@ -199,6 +219,9 @@
                     </select>
                     
                     <label aria-hidden="true">Localização</label>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
                     <ul class="dropdown-list" aria-hidden="true">
                         <li class="item" data-value="A">Opção 1</li>
                         <li class="item" data-value="B">Opção 2</li>
@@ -212,62 +235,204 @@
                     </select>
                     
                     <label aria-hidden="true">Tipo de imóvel</label>
-                    <span class="" aria-hidden="true"></span>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
                     <ul class="dropdown-list" aria-hidden="true">
                         <li class="item" data-value="A">Opção 1</li>
                         <li class="item" data-value="B">Opção 2</li>
                     </ul>
                 </div>
             </form>
-            <ul class="cards padt-5 padb-5 margb-5">
+            <ul class="cards">
                 <li class="card emphasis-card">
                     <div class="card-text sub-clr fw-3">
-                        <p class="button main-button text-uppercase sub3-fs margb-3">Pré Lançamento</p>
-                        <p>Lorem Ipsum</p>
+                        <p class="d-inline-block button main-button text-uppercase sub3-fs margb-3">Pré Lançamento</p>
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
                     </div>
-                    <a href="">
-                        <img src="assets/img/banner-1.png" alt="">
-                    </a>
+                    <img src="assets/img/banner-1.png" alt="Barra View">
                 </li>
                 <li class="card">
                     <div class="card-text sub-clr fw-3">
-                        <p>Lorem Ipsum</p>
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
                     </div>
-                    <a href="">
-                        <img src="assets/img/banner-2.png" alt="">
-                    </a>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
                 </li>
                 <li class="card">
                     <div class="card-text sub-clr fw-3">
-                        <p>Lorem Ipsum</p>
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
                     </div>
-                    <a href="">
-                        <img src="assets/img/banner-3.png" alt="">
-                    </a>
+                    <img src="assets/img/banner-3.png" alt="Barra View">
                 </li>
                 <li class="card">
                     <div class="card-text sub-clr fw-3">
-                        <p>Lorem Ipsum</p>
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
                     </div>
-                    <a href="">
-                        <img src="assets/img/banner-1.png" alt="">
-                    </a>
+                    <img src="assets/img/banner-1.png" alt="Barra View">
                 </li>
                 <li class="card">
                     <div class="card-text sub-clr fw-3">
-                        <p>Lorem Ipsum</p>
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
                     </div>
-                    <a href="">
-                        <img src="assets/img/banner-2.png" alt="">
-                    </a>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
+                    </div>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
+                    </div>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
+                    </div>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
+                </li>
+                <li class="card">
+                    <div class="card-text sub-clr fw-3">
+                        <p class="padb-3 fw-4 sub1-fs">Barra View</p>
+                        <div class="card-details sub3-fs">
+                            <div class="d-flex gap-5 padb-5">
+                                <div>
+                                    <span class="d-block">Cidade</span>
+                                    <span class="d-block fw-4">Araranguá</span>
+                                </div>
+                                <div>
+                                    <span class="d-block">Bairro</span>
+                                    <span class="d-block fw-4">Mato Alto</span>
+                                </div>
+                            </div>
+                            <span class="d-block padb-3">Apartamento com 3 dormitórios sendo 1 suíte</span>
+                            <span class="d-block">Condomínio Fechado</span>
+                        </div>
+                    </div>
+                    <img src="assets/img/banner-2.png" alt="Barra View">
                 </li>
             </ul>
-            <div class="text-center">
+            <div class="load-button text-center">
                 <button class="button disabled-button text-uppercase margt-5 margb-5">Carregar Mais</button>
             </div>
         </section>
         <footer class="section footer sub-bg sub-clr padt-7 padb-5">
-            <div>
+            <div class="logo">
                 <h2 class="padb-3">
                     <img src="assets/img/liva-footer.png" alt="Logotipo da Liva">
                 </h2>
@@ -277,7 +442,7 @@
                     eu fugiat nulla pariatur.
                 </p>
             </div>
-            <nav>
+            <nav class="nav">
                 <h3 class="text-uppercase emphasis-clr padb-4 fw-4">Navegue no site</h3>
                 <ul>
                     <li class="text-uppercase padb-4">
@@ -297,7 +462,7 @@
                     </li>
                 </ul>
             </nav>
-            <div>
+            <div class="social">
                 <p class="padb-5">Acompanhe nossas redes sociais</p>
                 <a class="round-button xs-button main-button d-inline-block margr-3" href="https://facebook" aria-label="Facebook">
                     <span class="gg-facebook" aria-hidden="true"></span>
@@ -306,7 +471,7 @@
                     <span class="gg-instagram" aria-hidden="true"></span>
                 </a>
             </div>
-            <div>
+            <div class="address">
                 <p class="padb-4">
                     Duis aute irure dolor in reprehenderit 
                     in voluptate velit esse cillum dolore
@@ -317,7 +482,7 @@
                     <a class="button emphasis-button text-uppercase d-inline-block margt-3" href="https://whatsapp">Whatsapp</a>
                 </address>
             </div>
-            <div class="subtext-clr padt-2 footer-border d-flex justify-between align-center">
+            <div class="copy subtext-clr padt-2 footer-border d-flex justify-between align-center">
                 <small class="sub3-fs width-50">
                     Liva © 2022 Todos os direitos reservados.
                 </small>
@@ -331,7 +496,8 @@
         ></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="assets/js/carousel.js" type="text/javascript"></script>
-        <script src="assets/js/form.js" type="text/javascript"></script>
         <script src="assets/js/menu.js" type="text/javascript"></script>
+        <script src="assets/js/form.js" type="text/javascript"></script>
+        <script src="assets/js/card.js" type="text/javascript"></script>
     </body>
 </html>
