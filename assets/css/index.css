@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding: var(--pad4);
-    z-index: 2;
+    z-index: 15;
 }
 
 .section {
@@ -29,7 +29,7 @@
     height: 100vh;
     width: 100%;
     padding-top: var(--pad7);
-    z-index: 1;
+    z-index: 10;
 }
 
 .mobile-menu.active {
